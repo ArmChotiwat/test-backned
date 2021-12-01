@@ -1,0 +1,5 @@
+1. client request ไปยัง Server 
+2 server ทำการเตรียม Limited Thread 
+3 เรียก Event Queue เพื่อใช้เก็บ Queue ของ Request
+4 ใช้ Event Loop ตรวจสอบงานใน Queue 
+5 Event Loop เห็นว่าใจ Queue มีงานจะตึงงานมาทำ ถ้าเป็น Non-Blocking I/O จะส่งกลับหา client ถ้าเป็น  Blocking I/O ทำงานให้เสร็จเเล้วส่ง
